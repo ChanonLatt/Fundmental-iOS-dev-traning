@@ -48,11 +48,11 @@ let isSingle: Bool? = nil
 
 //MARK: - Operator
 
-let a = 2
-let b = 5
-let c = a + b
-
-let isPositive = c > 0
+//let a = 2
+//let b = 5
+//let c = a + b
+//
+//let isPositive = c > 0
 
 //MARK: - If else
 //if (isPositive) {
@@ -80,4 +80,76 @@ let isPositive = c > 0
 //    print("3")
 //default:
 //    print("don't know")
+//}
+
+//let a: Int? = 2
+//let b: Int? = 3
+//let c: Int? = 4
+//
+//MARK: - Declare tor tor knea
+//if let a = a,
+//   let b = b,
+//   let c = c {
+//    let max = [a, b, c].max()
+//    print(max)
+//}
+//
+//
+//func doHomework() {
+//MARK: - Declare tor tor knea mg
+//    guard let a = a,
+//          let b = b,
+//          let c = c else { return }
+//    let max = [a, b, c].max()
+//    print(max)
+//}
+
+//MARK: - Loop:
+//MARK: - For in loop
+
+//let name0 = "Chanon"
+//let name1 = "Nat"
+//let name2 = "Kiki"
+//let name3 = "hikhik"
+
+let names: [String] = ["Chanon", "Nat", "Kiki", "hikhik"]
+//print(names[0])
+//print(names[1])
+//print(names[2])
+//print(names[3])
+
+//for item in names {
+//    print(item)
+//}
+
+//MARK: - foreach loop
+//names.forEach { e in
+//    print(e)
+//}
+
+//MARK: - while loop
+//var index = 0
+//while index < 5 {
+//    print("I love you")
+//    index += 1
+//}
+
+//MARK: - repeate while loop = do while loop
+
+//var index = 0
+//repeat {
+//    print("i love you")
+//    index += 1
+//} while index < 5
+
+
+//MARK: - Using keyword break and continue
+//var index = 0
+//while index < 10 {
+//    if index % 2 != 0 {
+//        index += 1
+//        break
+//    }
+//    print("I love you at index \(index)")
+//    index += 1
 //}
