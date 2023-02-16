@@ -112,7 +112,7 @@ let isSingle: Bool? = nil
 //let name2 = "Kiki"
 //let name3 = "hikhik"
 
-let names: [String] = ["Chanon", "Nat", "Kiki", "hikhik"]
+//let names: [String] = ["Chanon", "Nat", "Kiki", "hikhik"]
 //print(names[0])
 //print(names[1])
 //print(names[2])
@@ -153,3 +153,44 @@ let names: [String] = ["Chanon", "Nat", "Kiki", "hikhik"]
 //    print("I love you at index \(index)")
 //    index += 1
 //}
+
+//MARK: - Collection
+
+//MARK: - Array
+var names: [String] = ["Chanon", "Nat", "Kiki", "hikhik"]
+//let chanon = names[0]
+//for name in names {
+//    print(name)
+//}
+//MARK: - function of array
+//names.forEach { name in
+//    print(name)
+//}
+let firstItem = names.first // will get first element of array
+let lastItem = names.last
+names.append(contentsOf: ["Apple", "Orange"]) /// add lots of elements
+names.append("DOG") // add item in the end of array
+names.insert("Cat", at: 1)
+names.insert(contentsOf: ["1", "2"], at: 0) // insert lot of elements
+names.remove(at: 1)
+//names.removeAll() /// remove all
+let results = names.filter { name in /// search items by condition
+    return name == "Nat"
+}
+
+let result = names.first { name in
+    return name == "Nat"
+}
+
+let result1 = names.last { name in
+    return name == "Nat"
+}
+
+
+print(result)
+print(results)
+
+
+
+
+
