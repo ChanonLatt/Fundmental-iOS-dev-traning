@@ -157,16 +157,17 @@ let isSingle: Bool? = nil
 //MARK: - Collection
 
 //MARK: - Array
-var names: [String] = ["Chanon", "Nat", "Kiki", "hikhik"]
+var names: [String] = ["Chanon", "Nat", "Kiki", "Nat", "hikhik"]
 //let chanon = names[0]
 //for name in names {
 //    print(name)
 //}
-//MARK: - function of array
+//MARK: - built in function and proeprty of array
 //names.forEach { name in
 //    print(name)
 //}
-let firstItem = names.first // will get first element of array
+let numberOfElement = names.count /// count array
+let firstItem = names.first // will get first element of aray
 let lastItem = names.last
 names.append(contentsOf: ["Apple", "Orange"]) /// add lots of elements
 names.append("DOG") // add item in the end of array
@@ -174,23 +175,36 @@ names.insert("Cat", at: 1)
 names.insert(contentsOf: ["1", "2"], at: 0) // insert lot of elements
 names.remove(at: 1)
 //names.removeAll() /// remove all
-let results = names.filter { name in /// search items by condition
-    return name == "Nat"
-}
 
-let result = names.first { name in
-    return name == "Nat"
-}
 
-let result1 = names.last { name in
-    return name == "Nat"
+//MARK: - Search or find in array
+names.forEach { name in
+    print(name)
 }
 
 
-print(result)
+//names.forEach { e in
+//    print("hello")
+//    return
+//}
+
+let results = names.filter { name in
+    return name == "Chanon"
+}
+
+let results1 = names.filter { e in
+    return e.lowercased() == "Nat".lowercased()
+}
+
 print(results)
+print(results1)
 
+let firstSearchResult = names.first { name in
+    return name == "Nat"
+}
 
+let lastSearchResult = names.last { name in
+    return name == "Nat"
+}
 
-
-
+print(firstSearchResult)
