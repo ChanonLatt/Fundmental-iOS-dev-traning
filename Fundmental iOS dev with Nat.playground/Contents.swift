@@ -188,23 +188,62 @@ names.forEach { name in
 //    return
 //}
 
-let results = names.filter { name in
-    return name == "Chanon"
+//let results = names.filter { name in
+//    return name == "Chanon"
+//}
+//
+//let results1 = names.filter { e in
+//    return e.lowercased() == "Nat".lowercased()
+//}
+//
+//print(results)
+//print(results1)
+//
+//let firstSearchResult = names.first { name in
+//    return name == "Nat"
+//}
+//
+//let lastSearchResult = names.last { name in
+//    return name == "Nat"
+//}
+//
+//print(firstSearchResult)
+
+
+//MARK: - Class & Object
+
+class Car {
+    let name: String
+    let color: String
+    
+    init (name: String, color: String) {
+        self.name = name
+        self.color = color
+    }
+    
+    func autoDrive() {
+        print("wo wo loy kob")
+    }
+    
+    func driveOnWater() {
+        print("----->>>>>>>>")
+    }
 }
 
-let results1 = names.filter { e in
-    return e.lowercased() == "Nat".lowercased()
+let pruis = Car(name: "Pruis 07", color: "Black")
+print(pruis.name)
+
+pruis.autoDrive()
+pruis.driveOnWater()
+
+
+class Lambo: Car {
+    
+    override func driveOnWater() {
+        super.driveOnWater()
+        print("`````~~~~~~~~~~~~~~~")
+    }
 }
 
-print(results)
-print(results1)
-
-let firstSearchResult = names.first { name in
-    return name == "Nat"
-}
-
-let lastSearchResult = names.last { name in
-    return name == "Nat"
-}
-
-print(firstSearchResult)
+let lambotoy = Lambo(name: "Lambotoy", color: "yello")
+lambotoy.driveOnWater()
